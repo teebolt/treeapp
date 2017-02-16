@@ -18,7 +18,7 @@ development:
   encoding: unicode
   database: treeapp_development
   pool:     5
-  username: treeapp
+  username:
   password:
   template: template0
 
@@ -46,7 +46,7 @@ test:
   encoding: unicode
   database: treeapp_test
   pool:     5
-  username: treeapp
+  username:
   password:
   template: template0
 
@@ -56,6 +56,6 @@ production:
   encoding: unicode
   database: treeapp_production
   pool:     5
-  username: treeapp
+  username: 
   password:
   template: template0
