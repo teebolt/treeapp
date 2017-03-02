@@ -689,7 +689,7 @@ $transition-collapse:    height .35s ease;
 
 $card-spacer-x:            1.25rem;
 $card-spacer-y:            .75rem;
-$card-border-width:        1px;
+$card-border-width:        0px;
 $card-border-radius:       $border-radius;
 $card-border-color:        rgba($black,.125);
 $card-border-radius-inner: calc(#{$card-border-radius} - #{$card-border-width});
@@ -801,25 +801,25 @@ $card-columns-margin:       $card-spacer-y;
 //
 // Define alert colors, border radius, and padding.
 
-// $alert-padding-x:             1.25rem;
-// $alert-padding-y:             .75rem;
+$alert-padding-x:             1.25rem;
+$alert-padding-y:             .75rem;
 // $alert-margin-bottom:         $spacer-y;
 // $alert-border-radius:         $border-radius;
 // $alert-link-font-weight:      $font-weight-bold;
 // $alert-border-width:          $border-width;
-
+//
 // $alert-success-bg:            $state-success-bg;
 // $alert-success-text:          $state-success-text;
 // $alert-success-border:        $state-success-border;
-
+//
 // $alert-info-bg:               $state-info-bg;
 // $alert-info-text:             $state-info-text;
 // $alert-info-border:           $state-info-border;
-
+//
 // $alert-warning-bg:            $state-warning-bg;
 // $alert-warning-text:          $state-warning-text;
 // $alert-warning-border:        $state-warning-border;
-
+//
 // $alert-danger-bg:             $state-danger-bg;
 // $alert-danger-text:           $state-danger-text;
 // $alert-danger-border:         $state-danger-border;
