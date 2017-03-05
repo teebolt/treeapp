@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="221px" height="277px" viewBox="0 0 221 277" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="28.6567991%" y1="15.2215849%" x2="74.8070064%" y2="75.2802139%" id="linearGradient-1">
+            <stop stop-color="#9012FE" offset="0%"></stop>
+            <stop stop-color="#22F48D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M47.0315955,63.1234848 C26.6042994,70.4837711 12,90.0363771 12,113 C12,142.271092 35.7289083,166 65,166 C69.824835,166 74.4990898,165.355289 78.9413155,164.147317 C78.2856419,188.126424 74.548658,264.921 74.548658,264.921 L149.518698,264.921 C149.518698,264.921 144.333048,177.963953 143.963513,160.458095 C148.840999,162.106385 154.066142,163 159.5,163 C186.28581,163 208,141.28581 208,114.5 C208,93.971386 195.245798,76.4216755 177.22917,69.3426464 C172.339121,37.4369421 144.773337,13 111.5,13 C80.4242543,13 54.3270302,34.3155851 47.0315999,63.1234832 Z" id="Combined-Shape-Copy-4" stroke="url(#linearGradient-1)" stroke-width="16"></path>
+    </g>
+</svg>
