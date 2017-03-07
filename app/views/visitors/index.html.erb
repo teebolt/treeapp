@@ -1,3 +1,6 @@
+<% if user_signed_in? %>
+ <%= render 'layouts/activity' %>
+<% else %>
 <div class="container-fluid">
   <h1 class="display-3">
     <h3>Welcome to Tree social network.</h3>
@@ -7,3 +10,4 @@
   <p><a class="btn btn-primary" href="/users/sign_in" role="button">Log in &raquo;</a></p>
   <%= render "visitors/features" %>
 </div>
+<% end %>
