@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Tree" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Treeapp" %>">
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : " Tree - Community" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
     <%= favicon_link_tag %>
@@ -14,11 +14,11 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
-    <main role="main" class="">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
+    <main role="main" class="container-fluid">
+      <%= render 'layouts/messages' %>
+      <%= yield %>
     </main>
-    <footer>
+    <footer class="container-fluid">
       <%= render 'layouts/footer' %>
     </footer>
   </body>
