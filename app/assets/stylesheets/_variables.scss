@@ -85,6 +85,13 @@ $teal:   #5bc0de;
 $pink:   #ff5b77;
 $purple: #613d7c;
 
+// Brand colors
+$brand-green:       #088F39;
+$brand-green-light: #12A949;
+$brand-yellow:      #e6c229;
+$brand-orange:      #f17105;
+$brand-blue:        #1a8fe3;
+
 // Create grayscale
 $gray-dark:                 #292b2c;
 $gray:                      #464a4c;
@@ -667,22 +674,22 @@ $transition-collapse:    height .35s ease;
 //
 // Define colors for form feedback states and, by default, alerts.
 
-// $state-success-text:             #3c763d;
-// $state-success-bg:               #dff0d8;
-// $state-success-border:           darken($state-success-bg, 5%);
+$state-success-text:             #088F39;
+$state-success-bg:               $white;
+$state-success-border:           $state-success-text;
 
-// $state-info-text:                #31708f;
-// $state-info-bg:                  #d9edf7;
-// $state-info-border:              darken($state-info-bg, 7%);
+$state-info-text:                $brand-primary;
+$state-info-bg:                  $white;
+$state-info-border:              $brand-primary;
 
-// $state-warning-text:             #8a6d3b;
-// $state-warning-bg:               #fcf8e3;
-// $mark-bg:                        $state-warning-bg;
-// $state-warning-border:           darken($state-warning-bg, 5%);
+$state-warning-text:             #e6c229;
+$state-warning-bg:               #fcf8e3;
+$mark-bg:                        $state-warning-bg;
+$state-warning-border:           darken($state-warning-bg, 5%);
 
-// $state-danger-text:              #a94442;
-// $state-danger-bg:                #f2dede;
-// $state-danger-border:            darken($state-danger-bg, 5%);
+$state-danger-text:              #d11149;
+$state-danger-bg:                $white;
+$state-danger-border:            $state-danger-text;
 
 
 // Cards
