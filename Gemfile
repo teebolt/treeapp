@@ -7,6 +7,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 ruby '2.3.3'
+gem 'dotenv-rails', groups: [:development, :test]
 gem 'rails', '~> 5.0.1'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
