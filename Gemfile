@@ -31,7 +31,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'devise'
 gem 'high_voltage'
-gem 'pg'
+gem 'pg', '~> 0.18'
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
@@ -39,7 +39,7 @@ group :development do
   gem 'spring-commands-rspec'
 end
 group :development, :test do
-  gem 'factory_girl_rails'
+  gem 'factory_bot'
   gem 'faker'
   gem 'rspec-rails'
 end
