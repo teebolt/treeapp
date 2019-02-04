@@ -1,11 +1,18 @@
-<nav>
-  <h1>Tree</h1>
-  <ul>
-    <li><a href="#"></a></li>
-    <li><a href="#"></a></li>
-    <li><a href="#"></a></li>
-    <li><%= link_to "Sign out", destroy_user_session_path, method: :delete%></li>
-  </ul>
-</nav>
+<div class="home">
+  <nav class="navbar navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="/home">
+        <%= image_tag("tree-logo.png", width: "80px") %>
+      </a>
+      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+    </div>
+  </nav>
 
-<h1>Feed</h1>
+  <!-- Using these for now to bootstrap devise -->
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <main class="container bg-light">
+    <h1>Feed</h1>
+  </main>
+</div>
