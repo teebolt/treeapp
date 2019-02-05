@@ -1,26 +1,31 @@
-<div class="sign-in">
-  <div class="text-center mb-4">
-    <%= image_tag("tree-logo.png", width: "100px") %>
-    <h3 class="text-secondary mt-4">Log in</h3>
-  </div>
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="form-label-group">
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-control mb-3", "aria-describedby": "emailHelp" %>
-      <%= f.label :email %>
+<div class="vertical-center-wrapper">
+  <div class="sign-in">
+    <div class="text-center">
+      <%= image_tag("tree-logo.png", width: "100px", class: "mb-4") %>
+      <h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
+          <!-- Using these for now to bootstrap devise -->
+    <p class="h-auto text-info"><%= notice %></p>
+    <p class="h-auto text-info"><%= alert %></p>
     </div>
-    <div class="form-label-group">
-      <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", class: "form-control" %>
-      <%= f.label :password %>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "form-signin") do |f| %>
+      <div class="form-label-group">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-control mb-3", "aria-describedby": "emailHelp" %>
+        <%= f.label :email %>
+      </div>
+      <div class="form-label-group">
+        <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", class: "form-control" %>
+        <%= f.label :password %>
+      </div>
+      <div class="form-group form-check">
+        <% if devise_mapping.rememberable? -%>
+          <%= f.check_box :remember_me, class: "form-check-input" %>
+          <%= f.label :remember_me, class: "form-check-label" %>
+        <% end -%>
+      </div>
+      <%= f.submit "Log in", class: "btn btn-block btn-primary" %>
+    <% end %>
+    <div class="mt-2">
+      <%= render "devise/shared/links" %>
     </div>
-    <div class="form-group form-check">
-      <% if devise_mapping.rememberable? -%>
-        <%= f.check_box :remember_me, class: "form-check-input" %>
-        <%= f.label :remember_me, class: "form-check-label" %>
-      <% end -%>
-    </div>
-    <%= f.submit "Log in", class: "btn btn-outline-primary" %>
-  <% end %>
-  <div class="mt-2">
-    <%= render "devise/shared/links" %>
   </div>
 </div>

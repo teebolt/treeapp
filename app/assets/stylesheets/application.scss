@@ -13,11 +13,11 @@
  */
 
 @import "bootstrap";
+@import "globals";
 @import "floating-labels";
 
 .sign-in {
   width: 100%;
-max-width: 420px;
-padding: 15px;
-margin: auto;
+  max-width: 330px;
+  margin: auto;
 }
