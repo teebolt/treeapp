@@ -12,12 +12,25 @@
  *
  */
 
+@import "bootstrap/functions";
+@import "variables";
 @import "bootstrap";
-@import "globals";
 @import "floating-labels";
 
+html,
+body {
+  height: 100%;
+  background-color: #fefefe;
+}
 .sign-in {
   width: 100%;
   max-width: 330px;
   margin: auto;
+}
+.vertical-center-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
 }
